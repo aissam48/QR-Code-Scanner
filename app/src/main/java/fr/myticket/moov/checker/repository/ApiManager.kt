@@ -287,8 +287,8 @@ enum class AppEnvironment(val type: String) {
 }
 
 enum class BaseUrl(val type: String) {
-    //Prod("https://my-ticket-moov.fr"),
-    Prod("https://mtm.ajicreative.club"),
+    Prod("https://my-ticket-moov.fr"),
+    //Prod("https://mtm.ajicreative.club"),
     Dev("https://mtm.ajicreative.club"),
     Demo(""),
 }
