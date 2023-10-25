@@ -1,4 +1,4 @@
-package com.ajicreative.dtc.utils
+package fr.myticket.moov.checker.utils
 
 import android.annotation.SuppressLint
 import android.app.Activity
@@ -24,7 +24,6 @@ import com.bumptech.glide.signature.ObjectKey
 import fr.myticket.moov.checker.BuildConfig
 import fr.myticket.moov.checker.R
 import fr.myticket.moov.checker.repository.BaseUrl
-import fr.myticket.moov.checker.utils.Preferences
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.collectLatest
 import kotlinx.coroutines.launch

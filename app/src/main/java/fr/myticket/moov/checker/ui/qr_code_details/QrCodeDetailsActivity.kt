@@ -3,11 +3,6 @@ package fr.myticket.moov.checker.ui.qr_code_details
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
-import androidx.activity.viewModels
-import androidx.core.content.ContextCompat
-import com.ajicreative.dtc.utils.*
-import com.google.android.material.snackbar.Snackbar
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 import dagger.hilt.android.AndroidEntryPoint
@@ -15,7 +10,11 @@ import fr.myticket.moov.checker.Enums.EnumTags
 import fr.myticket.moov.checker.R
 import fr.myticket.moov.checker.databinding.ActivityQrCodeDetailsBinding
 import fr.myticket.moov.checker.models.DetailsModel
-import fr.myticket.moov.checker.models.EventUI
+import fr.myticket.moov.checker.ui.MainActivity
+import fr.myticket.moov.checker.utils.Constants
+import fr.myticket.moov.checker.utils.goBackAnimation
+import fr.myticket.moov.checker.utils.gone
+import fr.myticket.moov.checker.utils.visible
 import java.text.SimpleDateFormat
 import java.util.*
 
@@ -36,8 +35,11 @@ class QrCodeDetailsActivity : AppCompatActivity() {
 
     private fun setUpClicks() {
         binding.ivBack.setOnClickListener {
-            finish()
+            val intent = Intent(this, MainActivity::class.java)
+            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK)
+            startActivity(intent)
             goBackAnimation()
+            finish()
         }
 
         binding.buttonRescan.setOnClickListener {

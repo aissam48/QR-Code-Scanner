@@ -20,11 +20,8 @@ import androidx.camera.core.ImageAnalysis
 import androidx.camera.core.Preview
 import androidx.camera.core.TorchState
 import androidx.camera.lifecycle.ProcessCameraProvider
-import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
-import com.ajicreative.dtc.utils.*
-import com.google.android.material.bottomsheet.BottomSheetBehavior
 import com.google.android.material.snackbar.Snackbar
 import com.google.common.util.concurrent.ListenableFuture
 import com.google.gson.Gson
@@ -38,6 +35,7 @@ import fr.myticket.moov.checker.ui.qr_code_details.QrCodeDetailsActivity
 import fr.myticket.moov.checker.ui.scan_qr.analyzer.MLKitBarcodeAnalyzer
 import fr.myticket.moov.checker.ui.scan_qr.analyzer.ScanningResultListener
 import fr.myticket.moov.checker.ui.scan_qr.viewModel.ScannerViewModel
+import fr.myticket.moov.checker.utils.*
 import java.util.concurrent.ExecutorService
 import java.util.concurrent.Executors
 import javax.inject.Inject
@@ -89,20 +87,23 @@ class BarcodeScanningActivity : AppCompatActivity() {
                     scannerViewModel.getEvent(it.data?.post_id ?: -1)
                 }
                 is EventUI.OnError -> {
-                    Snackbar.make(binding.root, it.message, 1500)
-                        .setTextColor(ContextCompat.getColor(this, R.color.textColor1))
-                        .setBackgroundTint(ContextCompat.getColor(this, R.color.textColor3))
-                        .show()
+
                     when (it.statusCode) {
                         in 500..599 -> {
-
+                            Snackbar.make(binding.root, it.message, 1500)
+                                .setTextColor(ContextCompat.getColor(this, R.color.textColor1))
+                                .setBackgroundTint(ContextCompat.getColor(this, R.color.textColor3))
+                                .show()
                         }
                         403 -> {
                             details = it.details
                             scannerViewModel.getEvent(it.details.post_id ?: -1)
                         }
                         else -> {
-
+                            Snackbar.make(binding.root, it.message, 1500)
+                                .setTextColor(ContextCompat.getColor(this, R.color.textColor1))
+                                .setBackgroundTint(ContextCompat.getColor(this, R.color.textColor3))
+                                .show()
                         }
                     }
                 }

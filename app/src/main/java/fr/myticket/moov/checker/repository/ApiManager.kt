@@ -3,9 +3,9 @@ package fr.myticket.moov.checker.repository
 
 import android.content.Context
 import android.util.Log
-import com.ajicreative.dtc.utils.Constants
+import fr.myticket.moov.checker.utils.Constants
 import fr.myticket.moov.checker.utils.JsonParser
-import com.ajicreative.dtc.utils.JsonResponses
+import fr.myticket.moov.checker.utils.JsonResponses
 import fr.myticket.moov.checker.utils.Preferences
 import fr.myticket.moov.checker.models.APIError
 import fr.myticket.moov.checker.models.EventRepo
@@ -287,7 +287,8 @@ enum class AppEnvironment(val type: String) {
 }
 
 enum class BaseUrl(val type: String) {
-    Prod("https://my-ticket-moov.fr"),
+    //Prod("https://my-ticket-moov.fr"),
+    Prod("https://mtm.ajicreative.club"),
     Dev("https://mtm.ajicreative.club"),
     Demo(""),
 }

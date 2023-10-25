@@ -1,4 +1,4 @@
-package com.ajicreative.dtc.utils
+package fr.myticket.moov.checker.utils
 
 import android.content.Context
 import android.util.Log

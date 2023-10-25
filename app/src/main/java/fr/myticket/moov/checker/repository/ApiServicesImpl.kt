@@ -2,11 +2,10 @@ package fr.myticket.moov.checker.repository
 
 import android.app.Application
 import android.content.Context
-import android.util.Log
 import fr.myticket.moov.checker.Enums.EnumTags
-import com.ajicreative.dtc.utils.JsonResponses
+import fr.myticket.moov.checker.utils.JsonResponses
 import fr.myticket.moov.checker.utils.Preferences
-import com.ajicreative.dtc.utils.toApiUrl
+import fr.myticket.moov.checker.utils.toApiUrl
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 import dagger.hilt.android.qualifiers.ApplicationContext
@@ -17,7 +16,6 @@ import io.ktor.http.*
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
 import org.json.JSONObject
-import java.util.*
 import javax.inject.Inject
 import kotlin.collections.HashMap
 
@@ -37,7 +35,7 @@ class ApiServicesImpl @Inject constructor(
     override suspend fun login(params: HashMap<String, Any>): Flow<EventRepo<Boolean>> = flow {
 
         apiManager.makeRequest(
-            url = Endpoint.LOGIN.type.toApiUrl("login.json"),
+            url = Endpoint.LOGIN.type.toApiUrl(""),
             bodyMap = params,
             reqMethod = HttpMethod.Post,
             parameterFormData = null,
@@ -84,7 +82,7 @@ class ApiServicesImpl @Inject constructor(
             }
 
             apiManager.makeRequest(
-                url = Endpoint.QR.type.toApiUrl("jsonResponse/conversations.json"),
+                url = Endpoint.QR.type.toApiUrl(""),
                 bodyMap = null,
                 reqMethod = HttpMethod.Get,
                 parameterFormData = parameters,

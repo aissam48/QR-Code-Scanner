@@ -5,13 +5,12 @@ import android.os.Bundle
 import android.text.InputType
 import android.text.method.HideReturnsTransformationMethod
 import android.text.method.PasswordTransformationMethod
-import android.util.Patterns
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import androidx.core.widget.doOnTextChanged
-import com.ajicreative.dtc.utils.collectLatestLifecycleFlow
-import com.ajicreative.dtc.utils.goForwardAnimation
+import fr.myticket.moov.checker.utils.collectLatestLifecycleFlow
+import fr.myticket.moov.checker.utils.goForwardAnimation
 import com.google.android.material.snackbar.Snackbar
 import dagger.hilt.android.AndroidEntryPoint
 import fr.myticket.moov.checker.Enums.EnumTags
@@ -26,6 +25,7 @@ class LoginActivity : AppCompatActivity() {
 
     lateinit var binding: ActivityLoginBinding
     private val viewModel by viewModels<LoginViewModel>()
+    private var isHide = true
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -47,6 +47,19 @@ class LoginActivity : AppCompatActivity() {
         binding.buttonLogin.setOnClickListener {
             viewModel.login()
         }
+
+        binding.buttonPasswordHide.setOnClickListener {
+            if (isHide){
+                isHide = false
+                binding.buttonPasswordHide.setImageResource(R.drawable.ic_opened_eye)
+                binding.etPasswordLogin.binding.etInput.transformationMethod = HideReturnsTransformationMethod()
+            }else{
+                isHide = true
+                binding.buttonPasswordHide.setImageResource(R.drawable.ic_closed_eye)
+                binding.etPasswordLogin.binding.etInput.transformationMethod = PasswordTransformationMethod()
+            }
+        }
+
     }
 
     private fun collectData() {
@@ -80,6 +93,7 @@ class LoginActivity : AppCompatActivity() {
     private fun goToHome() {
         val intent = Intent(this, MainActivity::class.java)
         startActivity(intent)
+        finish()
         goForwardAnimation()
     }
 
@@ -102,7 +116,7 @@ class LoginActivity : AppCompatActivity() {
 
         binding.etPasswordLogin.binding.etInput.doOnTextChanged { text, start, before, count ->
             viewModel.password = text.toString()
-            if (text.toString().length >= 6){
+            if (text.toString().isNotEmpty()){
                 binding.etPasswordLogin.setCustomBackground(R.drawable.bg_edit_text_focused)
             }else{
                 binding.etPasswordLogin.setCustomBackground(R.drawable.bg_edit_text_error)

@@ -1,7 +1,7 @@
 package fr.myticket.moov.checker.di
 
 import android.content.Context
-import com.ajicreative.dtc.utils.JsonResponses
+import fr.myticket.moov.checker.utils.JsonResponses
 import fr.myticket.moov.checker.utils.Preferences
 import dagger.Module
 import dagger.Provides

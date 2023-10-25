@@ -115,17 +115,6 @@ class LoginViewModel @Inject constructor(
             return false
         }
 
-        if (password.length < 6) {
-            viewModelScope.launch {
-                _sharedFlowLogin.emit(
-                    EventUI.OnError(
-                        appContext.getString(R.string.error_add_password_lenght),
-                        field = EnumTags.PASSWORD.value
-                    )
-                )
-            }
-            return false
-        }
         return true
     }
 

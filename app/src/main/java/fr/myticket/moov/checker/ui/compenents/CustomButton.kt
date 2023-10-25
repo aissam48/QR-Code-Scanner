@@ -6,8 +6,8 @@ import android.util.AttributeSet
 import android.view.LayoutInflater
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.content.ContextCompat
-import com.ajicreative.dtc.utils.goneWithFade
-import com.ajicreative.dtc.utils.visibleWithFade
+import fr.myticket.moov.checker.utils.goneWithFade
+import fr.myticket.moov.checker.utils.visibleWithFade
 import fr.myticket.moov.checker.R
 import fr.myticket.moov.checker.databinding.CustomButtonBinding
 

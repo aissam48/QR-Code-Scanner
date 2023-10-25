@@ -3,8 +3,7 @@ package fr.myticket.moov.checker.ui
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.ajicreative.dtc.utils.goForwardAnimation
-import fr.myticket.moov.checker.R
+import fr.myticket.moov.checker.utils.goForwardAnimation
 import fr.myticket.moov.checker.databinding.ActivityMainBinding
 import fr.myticket.moov.checker.ui.scan_qr.BarcodeScanningActivity
 

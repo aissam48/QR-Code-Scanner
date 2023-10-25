@@ -52,10 +52,9 @@ class ScannerViewModel @Inject constructor(
                         _sharedFlowDetails.emit(EventUI.OnSuccess(it.data))
                     }
                     is EventRepo.Error -> {
-                        _sharedFlowDetails.emit(EventUI.OnError(it.apiError.message))
                         when (it.apiError.statusCode) {
                             in (500..599) -> {
-                                _sharedFlowDetails.emit(EventUI.OnError(appContext.getString(R.string.error_message_at_server)))
+                                _sharedFlowDetails.emit(EventUI.OnError(message = appContext.getString(R.string.error_message_at_server)))
                             }
                             403->{
                                 val details = it.apiError.details

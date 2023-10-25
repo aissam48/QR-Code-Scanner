@@ -1,7 +1,6 @@
 package fr.myticket.moov.checker.utils
 
 import android.content.Context
-import com.ajicreative.dtc.utils.capitalizeFirstCharacter
 import fr.myticket.moov.checker.R
 import java.text.SimpleDateFormat
 import java.util.*
