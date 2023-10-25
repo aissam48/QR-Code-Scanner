@@ -107,6 +107,7 @@ class ApiServicesImpl @Inject constructor(
                         detailsObj = it.getJSONObject(EnumTags.ATTENDEE.value)
                     }
 
+                    detailsObj.remove("checkin_details")
                     val detail = Gson().fromJson<DetailsModel>(detailsObj.toString(), object :TypeToken<DetailsModel>(){}.type)
 
                     detail.message = message
