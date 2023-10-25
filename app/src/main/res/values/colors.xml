@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    
+    <color name="color1">#1DD6CE</color>
+    <color name="color2">#293462</color>
+    <color name="color3">#FF0031</color>
+    <color name="color4">#0F746F</color>
+    <color name="color5">#FF9800</color>
+    <color name="color6">#AEADAD</color>
+    <color name="color7">#3636E9</color>
+
+
+    <color name="barcode_reticle_background">#99000000</color>
+
+    <color name="textColor1">#FFFFFF</color>
+    <color name="textColor2">#293462</color>
+    <color name="textColor3">#FF0031</color>
+    <color name="textColor4">#000000</color>
+    <color name="textColor5">#AEADAD</color>
+
+    <color name="textColorHint">#AEADAD</color>
+
+</resources>

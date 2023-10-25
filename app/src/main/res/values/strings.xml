@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">My Ticket Moov</string>
+
+    <string name="just_now">À l\'instant</string>
+    <string name="ago">Il y a</string>
+    <string name="second">secondes</string>
+    <string name="minutes">minutes</string>
+    <string name="hours">Heures</string>
+    <string name="today">Aujourd\'hui</string>
+    <string name="yesterday">Hier</string>
+    <string name="tomorrow">Demain</string>
+    <string name="a">à</string>
+    <string name="error_message_at_server">Oops! Nous rencontrons actuellement quelques difficultés techniques</string>
+    <string name="error_message_validation_email">Add a valid email address</string>
+    <string name="error_add_password">add password</string>
+    <string name="error_add_password_lenght">password must be more than 6 cahrs</string>
+    <string name="title_main">Scanner les billets en toute simplicité</string>
+    <string name="description_main">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</string>
+    <string name="error_message_add_username">Add username</string>
+    <string name="title_login">Scannez les billets en un clin d\'œil.</string>
+    <string name="error_login_failed">Login failed. Invalid username or password</string>
+    <string name="camera_permission">Accept camera permission from settings</string>
+    <string name="text_scan_ticket">Scan ticket</string>
+    <string name="hint_username">Username</string>
+    <string name="hint_password">Password</string>
+    <string name="action_login">Login</string>
+    <string name="event_tickets_plus">Event Tickets Plus</string>
+    <string name="checked_in">Checked-in</string>
+    <string name="ticket">Ticket</string>
+    <string name="ticket_title">Ticket Title</string>
+    <string name="order_date">Order Date</string>
+    <string name="order_total">Order Total</string>
+    <string name="email">Email</string>
+    <string name="scan_another_ticket">Scan Another Ticket</string>
+    <string name="completed">Completed</string>
+    <string name="not_completed">Not completed</string>
+
+
+</resources>
