@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CustomEditText">
+
+        <attr name="putHint" format="string" />
+        <attr name="putText" format="string" />
+        <attr name="putTitle" format="string" />
+        <attr name="editHeight" format="integer" />
+        <attr name="hideIcon" format="boolean" />
+
+    </declare-styleable>
+
+    <declare-styleable name="CustomButton">
+        <attr name="buttonTitle" format="string" />
+        <attr name="buttonType" format="string" />
+        <attr name="buttonBackground" format="reference|color" />
+        <attr name="titleColor" format="color" />
+        <attr name="buttonHeight" format="integer" />
+        <attr name="buttonTextSize" format="dimension" />
+    </declare-styleable>
+
+</resources>
