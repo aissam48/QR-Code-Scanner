@@ -16,5 +16,5 @@ dependencyResolutionManagement {
 
     }
 }
-rootProject.name = "My Ticket Moov"
+rootProject.name = "QR Code Scanner"
 include ':app'

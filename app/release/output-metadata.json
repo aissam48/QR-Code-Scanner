@@ -4,7 +4,7 @@
     "type": "APK",
     "kind": "Directory"
   },
-  "applicationId": "fr.myticket.moov.checker",
+  "applicationId": "com.android.qrcodescanner",
   "variantName": "release",
   "elements": [
     {

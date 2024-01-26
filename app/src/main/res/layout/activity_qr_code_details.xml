@@ -9,7 +9,8 @@
 
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:fillViewport="true">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -34,7 +35,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/event_tickets_plus"
+                    android:text="Scan details"
                     android:layout_gravity="center"
                     android:textSize="16sp"
                     android:fontFamily="@font/font_montserrat_bold"
@@ -43,60 +44,6 @@
                     />
 
             </androidx.cardview.widget.CardView>
-
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:gravity="center_vertical"
-                android:layout_marginTop="25dp"
-                android:layout_marginStart="20dp"
-                android:layout_marginEnd="20dp"
-                android:orientation="horizontal">
-
-                <FrameLayout
-                    android:layout_width="75dp"
-                    android:layout_height="75dp"
-                    >
-
-                    <ImageView
-                        android:layout_width="70dp"
-                        android:layout_height="70dp"
-                        android:layout_gravity="center"
-                        android:src="@drawable/checked_true"/>
-
-                    <ImageView
-                        android:id="@+id/ivError"
-                        android:layout_width="25dp"
-                        android:layout_height="25dp"
-                        android:src="@drawable/ic_warning"
-                        android:layout_gravity="top|end"
-                        />
-
-                </FrameLayout>
-
-                <TextView
-                    android:id="@+id/tvChecked"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    tools:text="Already Checked-in"
-                    android:textColor="@color/textColor4"
-                    android:fontFamily="@font/font_montserrat_semi_bold"
-                    android:layout_marginStart="10dp"
-                    android:textSize="30sp"
-
-                    />
-
-            </LinearLayout>
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:layout_marginTop="30dp"
-                android:layout_marginStart="20dp"
-                android:layout_marginEnd="20dp"
-                android:background="@color/color6"/>
-
 
             <TextView
                 android:id="@+id/tvTitle"
@@ -109,151 +56,11 @@
                 android:fontFamily="@font/font_montserrat_semi_bold"
                 android:textColor="@color/textColor4"/>
 
-            <TextView
-                android:id="@+id/tvName"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                tools:text="Youssef"
-                android:textSize="15sp"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="25dp"
-                android:fontFamily="@font/font_montserrat_semi_bold"
-                android:textColor="@color/textColor4"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/checked_in"
-                android:textSize="15sp"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="8dp"
-                android:padding="7dp"
-                android:background="@drawable/bg_checked"
-                android:fontFamily="@font/font_montserrat_semi_bold"
-                android:textColor="@color/textColor1"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/ticket"
-                android:textSize="15sp"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="25dp"
-                android:fontFamily="@font/font_montserrat_semi_bold"
-                android:textColor="@color/textColor5"/>
-
-            <TextView
-                android:id="@+id/tvTicketId"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                tools:text="#3958"
-                android:textSize="18sp"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="8dp"
-                android:fontFamily="@font/font_montserrat_semi_bold"
-                android:textColor="@color/textColor4"/>
-
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/ticket_title"
-                android:textSize="15sp"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="30dp"
-                android:fontFamily="@font/font_montserrat_semi_bold"
-                android:textColor="@color/textColor5"/>
-
-            <TextView
-                android:id="@+id/tvTarif"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                tools:text="Tarif enfant"
-                android:textSize="25sp"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="8dp"
-                android:fontFamily="@font/font_montserrat_semi_bold"
-                android:textColor="@color/textColor4"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/order_date"
-                android:textSize="15sp"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="25dp"
-                android:fontFamily="@font/font_montserrat_semi_bold"
-                android:textColor="@color/textColor5"/>
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-
-                <TextView
-                    android:id="@+id/tvDate"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    tools:text="Oct,23 2023"
-                    android:textSize="18sp"
-                    android:layout_marginStart="20dp"
-                    android:layout_marginTop="8dp"
-                    android:fontFamily="@font/font_montserrat_semi_bold"
-                    android:textColor="@color/textColor4"/>
-
-                <TextView
-                    android:id="@+id/tvCompleted"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    tools:text="Completed"
-                    android:textSize="18sp"
-                    android:layout_marginStart="20dp"
-                    android:layout_marginTop="8dp"
-                    android:fontFamily="@font/font_montserrat_semi_bold"
-                    android:textColor="@color/textColor4"/>
-
-            </LinearLayout>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/order_total"
-                android:textSize="15sp"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="25dp"
-                android:fontFamily="@font/font_montserrat_semi_bold"
-                android:textColor="@color/textColor5"/>
-
-            <TextView
-                android:id="@+id/tvPrice"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                tools:text="$15"
-                android:textSize="18sp"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="8dp"
-                android:fontFamily="@font/font_montserrat_semi_bold"
-                android:textColor="@color/textColor4"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/email"
-                android:textSize="15sp"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="25dp"
-                android:fontFamily="@font/font_montserrat_semi_bold"
-                android:textColor="@color/textColor5"/>
-
-            <TextView
-                android:id="@+id/tvEmail"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                tools:text="mobile@ajicreative.com"
-                android:textSize="18sp"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="8dp"
-                android:fontFamily="@font/font_montserrat_semi_bold"
-                android:textColor="@color/textColor4"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -274,7 +81,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/scan_another_ticket"
+                    android:text="@string/scan_another_qr_code"
                     android:textSize="20sp"
                     android:layout_marginStart="15dp"
                     android:fontFamily="@font/font_montserrat_bold"

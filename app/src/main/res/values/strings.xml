@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">My Ticket Moov</string>
+    <string name="app_name">QR Code Scanner</string>
 
     <string name="just_now">À l\'instant</string>
     <string name="ago">Il y a</string>
@@ -31,7 +31,7 @@
     <string name="order_date">Order Date</string>
     <string name="order_total">Order Total</string>
     <string name="email">Email</string>
-    <string name="scan_another_ticket">Scan Another Ticket</string>
+    <string name="scan_another_qr_code">Scan Another Qr Code</string>
     <string name="completed">Completed</string>
     <string name="not_completed">Not completed</string>
 

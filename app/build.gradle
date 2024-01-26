@@ -8,11 +8,11 @@ plugins {
 }
 
 android {
-    namespace 'fr.myticket.moov.checker'
+    namespace 'com.android.qrcodescanner'
     compileSdk 33
 
     defaultConfig {
-        applicationId "fr.myticket.moov.checker"
+        applicationId "com.android.qrcodescanner"
         minSdk 24
         targetSdk 33
         versionCode 1
