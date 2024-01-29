@@ -1,11 +1,11 @@
-package com.android.qrcodescanner.ui.scan_qr
+package com.aissam.qrcodescanner.ui.scan_qr
 
 import android.content.Context
 import android.graphics.*
 import android.util.AttributeSet
 import android.view.View
 import androidx.core.content.ContextCompat
-import com.android.qrcodescanner.R
+import com.aissam.qrcodescanner.R
 
 
 class ViewFinderOverlay(context: Context, attrs: AttributeSet) : View(context, attrs) {

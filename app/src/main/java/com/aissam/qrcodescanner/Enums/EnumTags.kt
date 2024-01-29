@@ -1,4 +1,4 @@
-package com.android.qrcodescanner.Enums
+package com.aissam.qrcodescanner.Enums
 
 enum class EnumTags(val value: String) {
 

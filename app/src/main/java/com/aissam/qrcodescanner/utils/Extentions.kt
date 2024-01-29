@@ -1,8 +1,8 @@
-package com.android.qrcodescanner.utils
+package com.aissam.qrcodescanner.utils
 
 import android.app.Activity
 import android.view.View
-import com.android.qrcodescanner.R
+import com.aissam.qrcodescanner.R
 
 
 fun Activity.goForwardAnimation() {

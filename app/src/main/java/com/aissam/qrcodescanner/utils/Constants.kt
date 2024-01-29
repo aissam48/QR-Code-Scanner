@@ -1,4 +1,4 @@
-package com.android.qrcodescanner.utils
+package com.aissam.qrcodescanner.utils
 
 object Constants {
 

@@ -1,4 +1,4 @@
-package com.android.qrcodescanner.ui.scan_qr
+package com.aissam.qrcodescanner.ui.scan_qr
 
 import android.Manifest
 import android.content.Context
@@ -18,16 +18,16 @@ import androidx.camera.core.TorchState
 import androidx.camera.lifecycle.ProcessCameraProvider
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
-import com.android.qrcodescanner.Enums.EnumTags
-import com.android.qrcodescanner.R
-import com.android.qrcodescanner.databinding.ActivityBarcodeScanningBinding
-import com.android.qrcodescanner.ui.qr_code_details.QrCodeDetailsActivity
-import com.android.qrcodescanner.ui.scan_qr.analyzer.MLKitBarcodeAnalyzer
-import com.android.qrcodescanner.ui.scan_qr.analyzer.ScanningResultListener
-import com.android.qrcodescanner.utils.goBackAnimation
-import com.android.qrcodescanner.utils.goForwardAnimation
-import com.android.qrcodescanner.utils.gone
-import com.android.qrcodescanner.utils.visible
+import com.aissam.qrcodescanner.Enums.EnumTags
+import com.aissam.qrcodescanner.R
+import com.aissam.qrcodescanner.databinding.ActivityBarcodeScanningBinding
+import com.aissam.qrcodescanner.ui.qr_code_details.QrCodeDetailsActivity
+import com.aissam.qrcodescanner.ui.scan_qr.analyzer.MLKitBarcodeAnalyzer
+import com.aissam.qrcodescanner.ui.scan_qr.analyzer.ScanningResultListener
+import com.aissam.qrcodescanner.utils.goBackAnimation
+import com.aissam.qrcodescanner.utils.goForwardAnimation
+import com.aissam.qrcodescanner.utils.gone
+import com.aissam.qrcodescanner.utils.visible
 import com.google.android.material.snackbar.Snackbar
 import com.google.common.util.concurrent.ListenableFuture
 import dagger.hilt.android.AndroidEntryPoint

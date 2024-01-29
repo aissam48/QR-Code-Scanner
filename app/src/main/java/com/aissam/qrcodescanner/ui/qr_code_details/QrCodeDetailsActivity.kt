@@ -1,11 +1,11 @@
-package com.android.qrcodescanner.ui.qr_code_details
+package com.aissam.qrcodescanner.ui.qr_code_details
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.android.qrcodescanner.Enums.EnumTags
+import com.aissam.qrcodescanner.Enums.EnumTags
 import dagger.hilt.android.AndroidEntryPoint
-import com.android.qrcodescanner.databinding.ActivityQrCodeDetailsBinding
-import com.android.qrcodescanner.utils.goBackAnimation
+import com.aissam.qrcodescanner.databinding.ActivityQrCodeDetailsBinding
+import com.aissam.qrcodescanner.utils.goBackAnimation
 import java.util.*
 
 @AndroidEntryPoint

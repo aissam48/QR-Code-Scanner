@@ -1,4 +1,4 @@
-package com.android.qrcodescanner.checker
+package com.aissam.qrcodescanner.checker
 
 import org.junit.Test
 

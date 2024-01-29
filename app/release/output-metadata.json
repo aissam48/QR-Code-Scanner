@@ -4,7 +4,7 @@
     "type": "APK",
     "kind": "Directory"
   },
-  "applicationId": "com.android.qrcodescanner",
+  "applicationId": "com.aissam.qrcodescanner",
   "variantName": "release",
   "elements": [
     {

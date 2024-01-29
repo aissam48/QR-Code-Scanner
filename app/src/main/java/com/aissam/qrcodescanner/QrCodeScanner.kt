@@ -1,4 +1,4 @@
-package com.android.qrcodescanner
+package com.aissam.qrcodescanner
 
 import android.app.Application
 import dagger.hilt.android.HiltAndroidApp

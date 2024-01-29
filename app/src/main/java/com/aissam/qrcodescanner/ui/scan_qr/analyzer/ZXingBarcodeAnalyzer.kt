@@ -1,4 +1,4 @@
-package com.android.qrcodescanner.ui.scan_qr.analyzer
+package com.aissam.qrcodescanner.ui.scan_qr.analyzer
 
 import android.graphics.ImageFormat
 import android.util.Log

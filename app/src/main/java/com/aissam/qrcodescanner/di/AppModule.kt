@@ -1,4 +1,4 @@
-package com.android.qrcodescanner.di
+package com.aissam.qrcodescanner.di
 
 import android.content.Context
 import dagger.Module
